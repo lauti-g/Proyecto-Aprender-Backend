@@ -1,3 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 26, 1);
+}
+
 h1{
     color: blueviolet;
+    text-align: center;
+    font-size: 10vh;
+
+}
+
+.listaProductos{
+    box-sizing: content-box;
+    width: 40vw;
+    background-color: rgb(56, 58, 50);
+    border-color: rgb(255, 238, 0);
+    border-width: 0.2vw;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding: 5vh;
+}
+
+.producto{
+    height: 4vh;
+    width: 35vw;
+    background-color: rgb(211, 221, 216);
+    border-color: rgb(255, 238, 0);
+    border-width: 0.1vw;
+    border-style: solid;
+    text-align: center;
+    font-size: 2.7vh;
 }

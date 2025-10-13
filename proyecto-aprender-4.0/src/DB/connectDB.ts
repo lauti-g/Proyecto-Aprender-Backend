@@ -5,8 +5,11 @@ import "dotenv/config";
 
 
 
-const sequelize = new Sequelize(process.env.nombreDB, process.env.usuario, process.env.contrasena,{
-    host: process.env.host,
+const sequelize = new Sequelize(process.env.NOMBREDB || "schema", 
+    process.env.USUARIO || "root", 
+    process.env.CONTRASENA || "1234",
+    {
+    host: process.env.HOST || "localhost",
     dialect: "mysql"
 });
 
